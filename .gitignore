@@ -22,3 +22,5 @@ server/build/
 Thumbs.db
 .vscode/
 .idea/
+
+.vite/
