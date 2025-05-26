@@ -1,0 +1,18 @@
+@import "tailwindcss"; /* Import Tailwind CSS */
+
+/* 
+  Add the `no-scrollbar` class to any element to hide its scrollbar. 
+  Example usage in JSX: 
+  <div className="no-scrollbar"></div> 
+*/
+@layer utilities {
+  /* Custom utility class to hide scrollbars */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar in WebKit-based browsers (e.g., Chrome, Safari) */
+  }
+  
+  .no-scrollbar {
+    -ms-overflow-style: none; /* Hides the scrollbar in Internet Explorer and Edge (legacy) */
+    scrollbar-width: none; /* Hides the scrollbar in Firefox */
+  }
+}
