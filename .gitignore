@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Node modules
+=======
+# Node modules (both client and server)
+>>>>>>> 2a2e64e73ead8457fd9dd00ae2074bdcd60cc53a
 client/node_modules/
 server/node_modules/
 

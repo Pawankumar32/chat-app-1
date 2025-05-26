@@ -3,23 +3,42 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+<<<<<<< HEAD
   "scripts": {
     "server": "nodemon server.js",
     "start": "node server.js"
   },
   "type": "module",
   "keywords": [],
+=======
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+>>>>>>> 2a2e64e73ead8457fd9dd00ae2074bdcd60cc53a
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^3.0.2",
+<<<<<<< HEAD
     "cloudinary": "^2.6.1",
+=======
+    "cookie-parser": "^1.4.7",
+>>>>>>> 2a2e64e73ead8457fd9dd00ae2074bdcd60cc53a
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
+<<<<<<< HEAD
     "mongoose": "^8.14.3",
     "nodemon": "^3.1.10",
     "socket.io": "^4.8.1"
+=======
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.13.2",
+    "nodemailer": "^6.10.0",
+    "nodemon": "^3.1.9"
+>>>>>>> 2a2e64e73ead8457fd9dd00ae2074bdcd60cc53a
   }
 }

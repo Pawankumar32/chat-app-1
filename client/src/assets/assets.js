@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import avatar_icon from './avatar_icon.png'
 import gallery_icon from './gallery_icon.svg'
 import help_icon from './help_icon.png'
@@ -138,3 +139,22 @@ export const messagesDummyData = [
         "createdAt": "2025-04-28T10:24:08.523Z",
     }
 ]
+=======
+import arrow_icon from './arrow_icon.svg'
+import lock_icon from './lock_icon.svg'
+import logo from './logo.svg'
+import mail_icon from './mail_icon.svg'
+import person_icon from './person_icon.svg'
+import hand_wave from './hand_wave.png'
+import header_img from './header_img.png'
+
+export const assets = {
+    arrow_icon,
+    lock_icon,
+    logo,
+    mail_icon,
+    person_icon,
+    hand_wave,
+    header_img
+}
+>>>>>>> 2a2e64e73ead8457fd9dd00ae2074bdcd60cc53a

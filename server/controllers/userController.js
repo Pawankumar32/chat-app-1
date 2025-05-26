@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { generateToken } from "../lib/utils.js";
 import User from "../models/User.js";
 import bcrypt from "bcryptjs";
@@ -134,3 +135,28 @@ export const updateProfile = async (req, res) => {
         res.status(500).json({ success: false, message: "Internal Server Error" });
     }
 };
+=======
+import userModel from "../models/userModel.js";
+
+export const getUserData = async (req, res) => {
+    try {
+        const { userId } = req.body;
+        const user = await userModel.findById(userId);
+        if (!user) {
+            return res.status(404).json({ message: "User not found" });
+        }
+        res.status(200).json({
+            success: true,
+            userData:{
+                name:user.name,
+                isAccountVerified:user.isAccountVerified
+            }
+        });
+    }
+    catch (error) {
+        console.error(error);
+        return res.status(500).json({ message: error.message });
+    }
+}
+
+>>>>>>> 2a2e64e73ead8457fd9dd00ae2074bdcd60cc53a

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "tailwindcss"; /* Import Tailwind CSS */
 
 /* 
@@ -15,4 +16,13 @@
     -ms-overflow-style: none; /* Hides the scrollbar in Internet Explorer and Edge (legacy) */
     scrollbar-width: none; /* Hides the scrollbar in Firefox */
   }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,600;1,400;1,500&display=swap');
+
+@import "tailwindcss";
+
+
+*{
+  font-family: "Poppins", sans-serif;
+>>>>>>> 2a2e64e73ead8457fd9dd00ae2074bdcd60cc53a
 }

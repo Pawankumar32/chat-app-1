@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Import necessary modules and components
 import { Navigate, Route, Routes } from 'react-router-dom'; // For routing
 import HomePage from './pages/HomePage'; // Home page component
@@ -41,3 +42,30 @@ const App = () => {
 };
 
 export default App;
+=======
+import React from "react"
+import { Routes, Route } from "react-router-dom"
+import Login from "./pages/Login"
+import Home from "./pages/Home"
+import EmailVerify from "./pages/EmailVerify"
+import ResetPassword from "./pages/ResetPassword"
+import { ToastContainer} from 'react-toastify';
+
+
+
+const App = () => {
+  return (
+    <div>
+    <ToastContainer/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/email-verify" element={<EmailVerify />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
+      </Routes>
+    </div>
+  )
+}
+
+export default App
+>>>>>>> 2a2e64e73ead8457fd9dd00ae2074bdcd60cc53a

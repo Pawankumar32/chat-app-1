@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import express from "express";
 import http from "http";
 import cors from "cors";
@@ -102,3 +103,32 @@ process.on("unhandledRejection", (error) => {
 });
 
 export { io, userSocketMap }; // Export io and userSocketMap for use in other modules
+=======
+import express from 'express';
+import cors from 'cors';
+import 'dotenv/config';
+import cookieParser from 'cookie-parser';
+
+import connectDB from './config/mongodb.js';
+import authRouter from './routes/authRoutes.js';
+import userRouter from './routes/userRoutes.js';
+
+
+const app = express();
+const PORT = process.env.PORT || 5001;
+connectDB();
+
+const allowedOrigins=['http://localhost:5173'];
+
+app.use(express.json());
+app.use(cookieParser());
+app.use(cors({ origin:allowedOrigins, credentials: true}));
+
+//################# API End points #####################
+app.get('/',(req,res)=> res.send('API is Working...'));
+app.use('/api/auth', authRouter);
+app.use('/api/user', userRouter);
+
+
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+>>>>>>> 2a2e64e73ead8457fd9dd00ae2074bdcd60cc53a

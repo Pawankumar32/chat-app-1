@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Import necessary modules
 import { createRoot } from 'react-dom/client'; // ReactDOM for rendering the app
 import './index.css'; // Global CSS styles
@@ -19,3 +20,20 @@ createRoot(document.getElementById('root')).render(
     </AuthProvider>
   </BrowserRouter>
 );
+=======
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+import { BrowserRouter } from 'react-router-dom'
+// browser router from react router dom
+import { AppContextProvider } from './context/AppContext.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <BrowserRouter>
+    <AppContextProvider>
+      <App />
+
+    </AppContextProvider>
+  </BrowserRouter>,
+)
+>>>>>>> 2a2e64e73ead8457fd9dd00ae2074bdcd60cc53a
